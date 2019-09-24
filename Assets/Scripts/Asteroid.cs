@@ -8,9 +8,7 @@ public class Asteroid : DynamicObjects
     [Tooltip("initial force used to start moving.")]
     [SerializeField] float initialForceMove = 10f;
 
-    //[Tooltip("Asteroid that will be instantiated once it is destroyed.")]
-    //[SerializeField] Asteroid asteroidPref;
-    //[SerializeField] int amountToInstantiate = 2;
+    [SerializeField] AudioSource explodeAudio;
 
     bool destroyWhenParticleStop = false;
 
@@ -86,16 +84,8 @@ public class Asteroid : DynamicObjects
         mRigidBody2D.velocity = Vector2.zero;
 
         EmitParticle();
-        //destroyWhenParticleStop = true;
+        explodeAudio.Play();
     }
-
-    //private void OnParticleSystemStopped()
-    //{
-    //    if (destroyWhenParticleStop)
-    //    {
-    //        Destroy(this.gameObject);
-    //    }
-    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

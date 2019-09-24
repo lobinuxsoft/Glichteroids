@@ -10,6 +10,12 @@ public class Ship : DynamicObjects
     [SerializeField] ParticleSystem turboParticle;
     [SerializeField] GameObject shield;
     [SerializeField] float shieldActiveTime = 3;
+    [SerializeField] AudioSource turboAudio;
+    [SerializeField] AudioSource respawnAudio;
+    [SerializeField] AudioSource shotAudio;
+    [SerializeField] AudioSource explodeAudio;
+
+
     float lastTimeShieldActive = 0;
 
     ParticleSystem.EmissionModule turboEmmitModule;
@@ -35,10 +41,14 @@ public class Ship : DynamicObjects
             {
                 turboEmmitModule.enabled = true;
                 mRigidBody2D.AddForce(mRigidBody2D.transform.up * moveForce);
+
+                if(!turboAudio.isPlaying)
+                    turboAudio.Play();
             }
             else
             {
                 turboEmmitModule.enabled = false;
+                turboAudio.Stop();
             }
 
             if (Input.GetAxis("Horizontal") != 0)
@@ -50,6 +60,7 @@ public class Ship : DynamicObjects
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 shotParticle.Emit(1);
+                shotAudio.Play();
             }
         }
 
@@ -75,8 +86,10 @@ public class Ship : DynamicObjects
         mPolygonCollider.enabled = false;
         mRigidBody2D.velocity = Vector2.zero;
         turboEmmitModule.enabled = false;
+        turboAudio.Stop();
 
         EmitParticle();
+        explodeAudio.Play();
 
         GameManager.instance.DamageShip();
     }
@@ -93,5 +106,6 @@ public class Ship : DynamicObjects
 
         lastTimeShieldActive = Time.time;
         shield.SetActive(true);
+        respawnAudio.Play();
     }
 }

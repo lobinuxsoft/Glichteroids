@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     public UpdateScoreEvent onScoreUpdate;
     public UpdateLivesEvent onUpdateLives;
     public UnityEvent onGameOver;
+    public UnityEvent onGameWin;
+
     private void Awake()
     {
         if (!instance)
@@ -117,6 +119,10 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         SetGameState(GameState.GAMEOVER);
+
+        score = 0;
+        onScoreUpdate.Invoke(score, highscore);
+
         onGameOver.Invoke();
     }
 
@@ -133,7 +139,7 @@ public class GameManager : MonoBehaviour
 
         if(totalAsteroidsInScene <= 0)
         {
-            //TODO WIN
+            onGameWin.Invoke();
         }
     }
 

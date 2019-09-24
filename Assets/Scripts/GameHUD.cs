@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GameHUD : MonoBehaviour
@@ -12,6 +10,7 @@ public class GameHUD : MonoBehaviour
     [SerializeField] Text highScoreText;
 
     Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +29,7 @@ public class GameHUD : MonoBehaviour
         gameManager.onScoreUpdate.AddListener(UpdateScore);
         gameManager.onUpdateLives.AddListener(UpdateLive);
         gameManager.onGameOver.AddListener(GameOver);
+        gameManager.onGameWin.AddListener(GameWin);
     }
 
     private void LateUpdate()
@@ -78,6 +78,16 @@ public class GameHUD : MonoBehaviour
     }
 
     public void GameOverAnimationEvent()
+    {
+        gameManager.SetGameState(GameState.MAIN);
+    }
+
+    void GameWin()
+    {
+        animator.SetTrigger("GameWin");
+    }
+
+    public void GameWinAnimationEvent()
     {
         gameManager.SetGameState(GameState.MAIN);
     }
