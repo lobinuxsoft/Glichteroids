@@ -2,10 +2,10 @@
 ##### imagen de `ART of ATARI` by `Tim Lapetino`
 # **`Glichteroids`** a Asteroids clone game
 ---
-## `Introduccion`
-> Este solo es un clon de un juego clasico... pero como no me basta hacer un clon voy a buscar la manera de mejorar el juego clasico y darle un nuevo aire, con mecanicas nuevas, mi inspiracion viene de --> [JUICE IT OR LOSE IT](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
+## `Introducción`
+> Este solo es un clon de un juego clásico... pero como no me basta hacer un clon voy a buscar la manera de mejorar el juego clásico y darle un nuevo aire, con mecánicas nuevas, mi inspiración viene de --> [JUICE IT OR LOSE IT](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
 ---
-## *`Mecanicas Base`*
+## *`Mecánicas Base`*
 
 * >✦ El juego arranca con 4 asteroides grandes moviéndose hacia una dirección random de la
 pantalla.
@@ -37,8 +37,8 @@ pierde una vida.
 ---
 # `Futuros cambios`
 
-* >Pasar todo el proyecto a `Android`, cambio en las mecanicas de movimiento para que responda a en pantalla tactil.
+* >Pasar todo el proyecto a `Android`, cambio en las mecánicas de movimiento para que responda a en pantalla táctil.
 
-* >Agregar efectos visuales, que respondan a la musica de fondo.
+* >Agregar efectos visuales, que respondan a la música de fondo.
 * >Pasar a modelos `3D` simples, no demasiados complejos, una nave `modular` a la que se le puedan agregar nuevo armamento.
-* >Plan "muy a futuro", implementar version `AR` y `VR`.
+* >Plan "muy a futuro", implementar versión `AR` y `VR`.
