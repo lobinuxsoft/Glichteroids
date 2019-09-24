@@ -1,0 +1,599 @@
+fileFormatVersion: 2
+guid: 93445d1724c5bf84ea25c2e918a2e638
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8851944850716436527
+    second: BigRock_0
+  - first:
+      213: -2558156113434905948
+    second: BigRock_1
+  - first:
+      213: -6773120330557261532
+    second: BigRock_2
+  - first:
+      213: 3986518583391646585
+    second: BigRock_3
+  - first:
+      213: 5103900432678727900
+    second: MedRock_0
+  - first:
+      213: -4816213878862415967
+    second: MedRock_1
+  - first:
+      213: 8258667944239403143
+    second: MedRock_2
+  - first:
+      213: -8221028159430724451
+    second: MedRock_3
+  - first:
+      213: 7711906997029404444
+    second: SmallRock_0
+  - first:
+      213: 3378928993738380285
+    second: SmallRock_1
+  - first:
+      213: -6946198247022205121
+    second: SmallRock_2
+  - first:
+      213: 5166682870978018909
+    second: SmallRock_3
+  - first:
+      213: -5716227622500258907
+    second: Ship
+  - first:
+      213: 2168776707001720763
+    second: Ovni
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigRock_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 79
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 31.5}
+        - {x: -27, y: 9.5}
+        - {x: -19, y: 1.5}
+        - {x: -34, y: -7.5}
+        - {x: -22, y: -25.5}
+        - {x: -6, y: -17.5}
+        - {x: -5, y: -35.5}
+        - {x: 11, y: -34.5}
+        - {x: 34, y: 1.5}
+        - {x: 34, y: 18.5}
+        - {x: 12, y: 35.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6b27d703af12541b32463d1983bb8e
+      internalID: 8851944850716436527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRock_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 83
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -25.5, y: 26}
+        - {x: -26.5, y: 13}
+        - {x: -34.5, y: -10}
+        - {x: -22.5, y: -11}
+        - {x: -27.5, y: -23}
+        - {x: 1.5, y: -34}
+        - {x: 11.5, y: -24}
+        - {x: 17.5, y: -28}
+        - {x: 34.5, y: -18}
+        - {x: 31.5, y: 10}
+        - {x: 19.5, y: 14}
+        - {x: 21.5, y: 23}
+        - {x: -6.5, y: 34}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af95a7ca4b025a4e9cf67ea8a64bdcf
+      internalID: -2558156113434905948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRock_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 87
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -35.5, y: 18.5}
+        - {x: -27.5, y: -0.5}
+        - {x: -34.5, y: -18.5}
+        - {x: -11.5, y: -31.5}
+        - {x: -4.5, y: -26.5}
+        - {x: 21.5, y: -31.5}
+        - {x: 35.5, y: 0.5}
+        - {x: 16.5, y: 11.5}
+        - {x: 24.5, y: 21.5}
+        - {x: 5.5, y: 31.5}
+        - {x: -10.5, y: 23.5}
+        - {x: -21.5, y: 27.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52abb117a92438446831d332ea03f872
+      internalID: -6773120330557261532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigRock_3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 80
+        width: 73
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8.5, y: 36.5}
+        - {x: -33.5, y: 28.5}
+        - {x: -25.5, y: 5.5}
+        - {x: -34.5, y: -18.5}
+        - {x: -13.5, y: -36.5}
+        - {x: 7.5, y: -33.5}
+        - {x: 9.5, y: -26.5}
+        - {x: 28.5, y: -24.5}
+        - {x: 30.5, y: -14.5}
+        - {x: 23.5, y: -6.5}
+        - {x: 34.5, y: -5.5}
+        - {x: 34.5, y: 13.5}
+        - {x: 27.5, y: 27.5}
+        - {x: 5.5, y: 36.5}
+        - {x: -3.5, y: 24.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce6940cd843c4542af9fb60b942f169
+      internalID: 3986518583391646585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedRock_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 13
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 19}
+        - {x: -17, y: 6}
+        - {x: -13, y: 1}
+        - {x: -20, y: -5}
+        - {x: -14, y: -15}
+        - {x: -4, y: -11}
+        - {x: -4, y: -22}
+        - {x: 7, y: -22}
+        - {x: 20, y: 0}
+        - {x: 20, y: 11}
+        - {x: 7, y: 21}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eae6987442625e49b1a21689aabd98a
+      internalID: 5103900432678727900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedRock_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 15
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15.5, y: 15.5}
+        - {x: -15.5, y: 7.5}
+        - {x: -20.5, y: -4.5}
+        - {x: -13.5, y: -6.5}
+        - {x: -15.5, y: -13.5}
+        - {x: 0.5, y: -20.5}
+        - {x: 6.5, y: -14.5}
+        - {x: 10.5, y: -16.5}
+        - {x: 20.5, y: -11.5}
+        - {x: 19.5, y: 5.5}
+        - {x: 13.5, y: 9.5}
+        - {x: 13.5, y: 15.5}
+        - {x: -4.5, y: 21.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d1ba8287039774e9a41a3e59cdaca4
+      internalID: -4816213878862415967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedRock_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 17
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 14.5}
+        - {x: -13, y: 17.5}
+        - {x: -22, y: 11.5}
+        - {x: -16, y: 0.5}
+        - {x: -21, y: -10.5}
+        - {x: -7, y: -20.5}
+        - {x: -3, y: -15.5}
+        - {x: 14, y: -19.5}
+        - {x: 21, y: 0.5}
+        - {x: 10, y: 7.5}
+        - {x: 16, y: 13.5}
+        - {x: 5, y: 19.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f2d7bc2191dbb4abc00b13e679b678
+      internalID: 8258667944239403143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedRock_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 13
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1.5, y: 17}
+        - {x: -5.5, y: 22}
+        - {x: -19.5, y: 17}
+        - {x: -15.5, y: 4}
+        - {x: -21.5, y: -11}
+        - {x: -8.5, y: -23}
+        - {x: 5.5, y: -22}
+        - {x: 6.5, y: -16}
+        - {x: 18.5, y: -16}
+        - {x: 18.5, y: -8}
+        - {x: 13.5, y: -4}
+        - {x: 21.5, y: -3}
+        - {x: 21.5, y: 8}
+        - {x: 17.5, y: 16}
+        - {x: 3.5, y: 22}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a06ae71b830654d8959277dee771c0
+      internalID: -8221028159430724451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRock_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 23
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4.5, y: 12}
+        - {x: -12.5, y: -2}
+        - {x: -8.5, y: -8}
+        - {x: -2.5, y: -8}
+        - {x: -2.5, y: -12}
+        - {x: 3.5, y: -12}
+        - {x: 11.5, y: -1}
+        - {x: 11.5, y: 7}
+        - {x: 4.5, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dec9764a0c499e488f2248f50d2b780
+      internalID: 7711906997029404444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRock_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 25
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 11.5}
+        - {x: -10, y: 9.5}
+        - {x: -12, y: -3.5}
+        - {x: -8, y: -9.5}
+        - {x: 3, y: -10.5}
+        - {x: 11, y: -8.5}
+        - {x: 12, y: 4.5}
+        - {x: 7, y: 9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe5c877a35f3e6488ea82f0def7073d
+      internalID: 3378928993738380285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRock_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 26
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: 9.5}
+        - {x: -12, y: 4.5}
+        - {x: -12, y: -6.5}
+        - {x: -3, y: -12.5}
+        - {x: 9, y: -11.5}
+        - {x: 13, y: -0.5}
+        - {x: 10, y: 7.5}
+        - {x: 3, y: 11.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f847bad749b1b04cbcdb1765349d9c9
+      internalID: -6946198247022205121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallRock_3
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 23
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5.5, y: 12}
+        - {x: -2.5, y: 14}
+        - {x: -12.5, y: 10}
+        - {x: -12.5, y: -5}
+        - {x: -5.5, y: -13}
+        - {x: 4.5, y: -12}
+        - {x: 9.5, y: -9}
+        - {x: 12.5, y: -2}
+        - {x: 11.5, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d53b8125b7cb9d4d9a46d940847b6a5
+      internalID: 5166682870978018909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ship
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 31
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 8.5}
+        - {x: -9, y: -8.5}
+        - {x: 0, y: -6.5}
+        - {x: 9, y: -8.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc33394eb03b60a478d69628b1961deb
+      internalID: -5716227622500258907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ovni
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 123
+        width: 57
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7.5, y: 14.5}
+        - {x: -12.5, y: 5.5}
+        - {x: -28.5, y: -5.5}
+        - {x: -13.5, y: -15.5}
+        - {x: 13.5, y: -15.5}
+        - {x: 28.5, y: -5.5}
+        - {x: 11.5, y: 5.5}
+        - {x: 6.5, y: 14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a28b1330b7f6944ba259c7b2b36fcd
+      internalID: 2168776707001720763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
