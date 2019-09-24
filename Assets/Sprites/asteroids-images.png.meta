@@ -44,6 +44,9 @@ TextureImporter:
   - first:
       213: 2168776707001720763
     second: Ovni
+  - first:
+      213: -4765851570883655592
+    second: Shield
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -577,6 +580,27 @@ TextureImporter:
       bones: []
       spriteID: 78a28b1330b7f6944ba259c7b2b36fcd
       internalID: 2168776707001720763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad1f31edba70794eaffe33cd4d2f9e7
+      internalID: -4765851570883655592
       vertices: []
       indices: 
       edges: []

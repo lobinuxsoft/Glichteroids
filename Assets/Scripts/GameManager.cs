@@ -27,15 +27,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] Vector2 minScreenBounce = Vector2.zero;
     [SerializeField] Vector2 maxScreenBounce = Vector2.zero;
 
-    [SerializeField] UpdateScoreEvent onScoreUpdate;
-    [SerializeField] UnityEvent onGameOver;
-    void Start()
+    public UpdateScoreEvent onScoreUpdate;
+    public UpdateLivesEvent onUpdateLives;
+    public UnityEvent onGameOver;
+    private void Awake()
     {
         if (!instance)
         {
             instance = this;
         }
+    }
 
+    void Start()
+    {
         ship = (Ship)FindObjectOfType<Ship>();
 
         CalculateScreenBounce();
@@ -52,10 +56,26 @@ public class GameManager : MonoBehaviour
                     if (curLives != maxLives)
                     {
                         curLives = maxLives;
+                        onUpdateLives.Invoke(curLives);
+
+                        //Restar ship only for see in main menu
+                        ship.ResetShip();
+                        restarShip = false;
                     }
+
 
                     if (allAsteroidInScene == true)
                     {
+                        var tempAsteroids = FindObjectsOfType<Asteroid>();
+
+                        if (tempAsteroids.Length > 0)
+                        {
+                            for (int i = 0; i < tempAsteroids.Length; i++)
+                            {
+                                Destroy(tempAsteroids[i].gameObject);
+                            }
+                        }
+
                         allAsteroidInScene = false;
                     }
 
@@ -81,9 +101,10 @@ public class GameManager : MonoBehaviour
 
     public void DamageShip()
     {
-        if(maxLives > 0)
+        if(curLives > 0)
         {
-            maxLives--;
+            curLives--;
+            onUpdateLives.Invoke(curLives);
             lastRestar = Time.time;
             restarShip = true;
         }
@@ -134,6 +155,10 @@ public class GameManager : MonoBehaviour
 
             allAsteroidInScene = true;
             totalAsteroidsInScene = starAsteroidsAmount + (starAsteroidsAmount * 2) + (starAsteroidsAmount * 4);
+
+            //First time ship reset
+            ship.ResetShip();
+            restarShip = false;
         }
     }
 
@@ -142,10 +167,20 @@ public class GameManager : MonoBehaviour
         gameState = state;
     }
 
+    public GameState GetGameState()
+    {
+        return gameState;
+    }
+
     void CalculateScreenBounce()
     {
         minScreenBounce = Camera.main.ScreenToWorldPoint(Vector3.zero);
         maxScreenBounce = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+    }
+
+    public int GetMaxLives()
+    {
+        return maxLives;
     }
 }
 
@@ -158,3 +193,6 @@ public enum GameState
 
 [System.Serializable]
 public class UpdateScoreEvent : UnityEvent<int, int>{ }
+
+[System.Serializable]
+public class UpdateLivesEvent : UnityEvent<int> { }

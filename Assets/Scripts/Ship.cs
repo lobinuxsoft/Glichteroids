@@ -8,6 +8,9 @@ public class Ship : DynamicObjects
     [SerializeField] float rotSpeed = 10;
     [SerializeField] ParticleSystem shotParticle;
     [SerializeField] ParticleSystem turboParticle;
+    [SerializeField] GameObject shield;
+    [SerializeField] float shieldActiveTime = 3;
+    float lastTimeShieldActive = 0;
 
     ParticleSystem.EmissionModule turboEmmitModule;
 
@@ -49,31 +52,46 @@ public class Ship : DynamicObjects
                 shotParticle.Emit(1);
             }
         }
+
+        if (shield.activeSelf)
+        {
+            if ((Time.time - lastTimeShieldActive) > shieldActiveTime)
+            {
+                shield.SetActive(false);
+            }
+        }
     }
 
     public void DamageShip()
     {
-        if (isShipDestroy == false)
-        {
-            isShipDestroy = true;
-            mSpriteRenderer.enabled = false;
-            mPolygonCollider.enabled = false;
-            mRigidBody2D.velocity = Vector2.zero;
-            turboEmmitModule.enabled = false;
+        if (shield.activeSelf)
+            return;
 
-            EmitParticle();
+        if (isShipDestroy)
+            return;
 
-            GameManager.instance.DamageShip();
-        }
+        isShipDestroy = true;
+        mSpriteRenderer.enabled = false;
+        mPolygonCollider.enabled = false;
+        mRigidBody2D.velocity = Vector2.zero;
+        turboEmmitModule.enabled = false;
+
+        EmitParticle();
+
+        GameManager.instance.DamageShip();
     }
 
     public void ResetShip()
     {
+        
         rotAcumulation = 0;
         isShipDestroy = false;
         mSpriteRenderer.enabled = true;
         mPolygonCollider.enabled = true;
         mRigidBody2D.SetRotation(0);
         mRigidBody2D.position = Vector2.zero;
+
+        lastTimeShieldActive = Time.time;
+        shield.SetActive(true);
     }
 }
